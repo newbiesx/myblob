@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/img/img.jpg' }]
       ],
-    // base: '.',
+    base: '/myblob',
     themeConfig: {
         nav: [{
                 text: 'Hmoe',
@@ -15,17 +15,30 @@ module.exports = {
                 link: '/css/'
             },
             { //这个导航栏对应多个子导航栏
-                text: 'CS与浏览器', // 这里的text就是导航栏上的名字
+                text: 'js', // 这里的text就是导航栏上的名字
                 items: [
-                    { text: '计算机网络', link: '/cs/network/' },
-                    { text: '浏览器相关', link: '/cs/browser/' }, // 对应的路径如下图所示
-                    { text: '数据库', link: '/cs/database/' },
-                    { text: '操作系统', link: 'cs/os/' }
+                    { text: 'vue2', link: '/js/vue2/' },
+                    { text: 'vue3', link: '/js/vue3/' }, 
+                    { text: 'react', link: '/js/react/' },
+                    { text: '数据库', link: '/js/database/' },
                 ]
+            },
+            { //这个导航栏对应多个子导航栏
+                text: '数据可视化', // 这里的text就是导航栏上的名字
+                items: [
+                    { text: 'gos', link: '/chat/gojs/' },
+                    { text: 'antVg6', link: '/chat/antvg6/' }, 
+                    { text: 'D3', link: '/chat/d3/' },
+                    { text: 'echarts', link: '/chat/echarts/' },
+                ]
+            },
+            {
+                text:'GitHub',
+                link:'https://github.com/newbiesx/myblob'
             }
         ],
         sidebar: {
-            "/foo/":['vue']
+            "/css/":["cssBase"]
         },
     },
 
