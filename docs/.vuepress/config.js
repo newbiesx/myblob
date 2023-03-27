@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/img/img.jpg' }]
       ],
-    base: '/myblob',
+    base: '/myblob/',
     themeConfig: {
         nav: [{
                 text: 'Hmoe',
