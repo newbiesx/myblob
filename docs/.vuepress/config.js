@@ -1,7 +1,10 @@
 module.exports = {
     title: '沅芷湘兰',
     description: 'Just playing around',
-    base: '.',
+    head: [
+        ['link', { rel: 'icon', href: '/img/img.jpg' }]
+      ],
+    // base: '.',
     themeConfig: {
         nav: [{
                 text: 'Hmoe',
@@ -21,21 +24,9 @@ module.exports = {
                 ]
             }
         ],
-        sidebar: [
-            // SidebarItem
-            {
-                text: 'Foo',
-                link: '/foo/',
-                children: [
-                    // SidebarItem
-                    {
-                        text: 'github',
-                        link: 'https://github.com',
-                        children: [],
-                    },
-                ],
-            },
-        ],
+        sidebar: {
+            "/foo/":['vue']
+        },
     },
 
 
